@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+
+
+    <class name= "com.example.application.model.PaymentSchedule" table="PAYMENTSCHEDULE">
+        <id name="paymentId" type="java.lang.String" column="paymentId" >
+            <generator class="hilo" />
+        </id>
+        <property name="number" column="number" type="java.lang.Integer" />
+        <property name="date" column="date" type="java.util.Date"/>
+        <property name="monthlyPaymentFormat" column="monthlyPaymentFormat" type="java.lang.Double"/>
+        <property name="percentFormat" column="percentFormat" type="java.lang.Double"/>
+        <property name="mainDebtFormat" column="mainDebtFormat" type="java.lang.Double"/>
+        <property name="remainder" column="remainder" type="java.lang.Double"/>
+        <property name="personId" column="personId"/>
+    </class>
+
+</hibernate-mapping>

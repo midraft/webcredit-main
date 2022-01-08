@@ -1,0 +1,11 @@
+.client-view {
+  display: block;
+  width: var(--lumo-size-xl);
+  height: var(--lumo-size-xl);
+
+}
+.client-view .button-layout {
+  margin-bottom: var(--lumo-space-l);
+  margin-top: var(--lumo-space-m);
+
+}
